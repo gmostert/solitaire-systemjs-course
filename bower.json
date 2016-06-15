@@ -7,6 +7,9 @@
     "angular-loader": "1.2.28",
     "angular-mocks": "1.2.28",
     "underscore": "1.8.2",
-    "ngDraggable": "0.1.8"
+    "ngDraggable": "0.1.8",
+    "es6-module-loader": "^0.17.11",
+    "traceur": "^0.0.111",
+    "system.js": "^0.19.31"
   }
 }
