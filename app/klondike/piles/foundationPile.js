@@ -1,5 +1,6 @@
+import {Pile} from 'klondike/piles/pile.js';
 
-function FoundationPile(cards, scoring) {
+export function FoundationPile(cards, scoring) {
   Pile.call(this, cards, scoring);
 }
 

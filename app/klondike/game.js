@@ -1,9 +1,11 @@
-import Deck from 'cards/deck.js';
+import _ from 'underscore';
 
-angular.module("klondike.game", [])
-    .service("klondikeGame", ["scoring", KlondikeGame]);
+import {Deck} from 'cards/deck.js';
+import {TableauPile} from 'klondike/piles/tableauPile.js'
+import {FoundationPile} from 'klondike/piles/foundationPile.js'
+import {RemainderPile} from 'klondike/piles/remainderPile.js'
 
-function KlondikeGame(scoring) {
+export function KlondikeGame(scoring) {
   this.newGame = function newGame() {
     var cards = new Deck().shuffled();
     this.newGameFromDeck(cards);

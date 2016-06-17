@@ -1,5 +1,8 @@
+import _ from 'underscore';
 
-function TableauPile(cards, scoring) {
+import {Pile} from 'klondike/piles/pile.js';
+
+export function TableauPile(cards, scoring) {
   Pile.call(this, cards, scoring);
 }
 
