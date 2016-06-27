@@ -12,7 +12,37 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
+  bundles: {
+    "app.bundle.js": [
+      "app.js",
+      "klondike/klondike.js",
+      "klondike/scoring.js",
+      "npm:babel-runtime@5.8.38/helpers/class-call-check.js",
+      "npm:babel-runtime@5.8.38/helpers/create-class.js",
+      "npm:babel-runtime@5.8.38/core-js/object/define-property.js",
+      "npm:core-js@1.2.6/library/fn/object/define-property.js",
+      "npm:core-js@1.2.6/library/modules/$.js",
+      "klondike/board.js",
+      "github:angular/bower-angular-route@1.5.7.js",
+      "github:angular/bower-angular-route@1.5.7/angular-route.js",
+      "github:angular/bower-angular@1.5.7.js",
+      "github:angular/bower-angular@1.5.7/angular.js",
+      "klondike/game.js",
+      "klondike/piles/remainderPile.js",
+      "klondike/piles/pile.js",
+      "npm:babel-runtime@5.8.38/core-js/object/create.js",
+      "npm:core-js@1.2.6/library/fn/object/create.js",
+      "klondike/piles/foundationPile.js",
+      "klondike/piles/tableauPile.js",
+      "npm:underscore@1.8.3.js",
+      "npm:underscore@1.8.3/underscore.js",
+      "cards/deck.js",
+      "cards/card.js",
+      "github:fatlinesofcode/ngDraggable@0.1.8.js",
+      "github:fatlinesofcode/ngDraggable@0.1.8/ngDraggable.js"
+    ]
+  },
+  map: "This is used by the system.js loader to map dependencies to the actual resources",
   map: {
     "angular": "github:angular/bower-angular@1.5.7",
     "angular-mocks": "github:angular/bower-angular-mocks@1.5.7",
@@ -22,11 +52,15 @@ System.config({
     "card": "cards/card.js",
     "core-js": "npm:core-js@1.2.6",
     "deck": "cards/deck.js",
+    "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
     "underscore": "npm:underscore@1.8.3",
     "github:angular/bower-angular-mocks@1.5.7": {
       "angular": "github:angular/bower-angular@1.5.7"
     },
     "github:angular/bower-angular-route@1.5.7": {
+      "angular": "github:angular/bower-angular@1.5.7"
+    },
+    "github:fatlinesofcode/ngDraggable@0.1.8": {
       "angular": "github:angular/bower-angular@1.5.7"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
